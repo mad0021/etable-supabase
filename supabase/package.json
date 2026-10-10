@@ -1,0 +1,12 @@
+{
+  "name": "etable-supabase-schema",
+  "private": true,
+  "type": "module",
+  "description": "Self-test of the eTable schema and RLS rules on in-memory Postgres (PGlite)",
+  "scripts": {
+    "test": "node check.mjs schema.sql 002_seguridad.sql"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.3.0"
+  }
+}

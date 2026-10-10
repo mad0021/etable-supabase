@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Solo las fotos que hace la cámara para la carta (MenuManagementScreen), no todo el almacenamiento -->
+<paths>
+    <cache-path name="shared_images" path="images/" />
+    <external-files-path name="my_images" path="Pictures" />
+</paths>

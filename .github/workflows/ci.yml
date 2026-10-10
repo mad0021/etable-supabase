@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  android:
+    name: Build app (debug + release with R8)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 25
+      - uses: android-actions/setup-android@v3
+        with:
+          packages: platform-tools # the default "tools" package no longer exists
+      - name: Android 37 platform (required by Compose 1.12 / Material 3 Expressive)
+        run: sdkmanager "platforms;android-37.0" || sdkmanager "platforms;android-37"
+      - uses: gradle/actions/setup-gradle@v4
+      # Builds without Supabase keys (the app warns at startup); no secrets in CI
+      - run: ./gradlew assembleDebug assembleRelease --no-daemon
+
+  supabase:
+    name: Schema and RLS rules (in-memory Postgres)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: supabase
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
+      - run: npm test

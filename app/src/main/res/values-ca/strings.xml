@@ -1,0 +1,688 @@
+<resources>
+    <string name="app_name">eTable</string>
+    <string name="login_title">Iniciar Sessió</string>
+    <string name="username_hint">Nom d\'usuari</string>
+    <string name="password_hint">Contrasenya</string>
+    <string name="login_button">Iniciar Sessió</string>
+    
+    <!-- Texts for LoginActivity -->
+    <string name="role_waiter">CAMBRER</string>
+    <string name="role_admin">ADMIN</string>
+    <string name="login_as">INICIAR SESSIÓ COM A %1$s</string>
+    <string name="enter_credentials">INTRODUEIX LES TEVES CREDENCIALS</string>
+    <string name="email_label">ADREÇA DE CORREU</string>
+    <string name="password_label">CONTRASENYA</string>
+    <string name="login_button_text">INICIAR SESSIÓ</string>
+    <string name="cancel_button">CANCEL·LAR</string>
+    <string name="verify_roles_debug">VERIFICAR ROLS (DEBUG)</string>
+    <string name="enter_email_password">INTRODUEIX CORREU I CONTRASENYA</string>
+    <string name="hide_password">AMAGAR CONTRASENYA</string>
+    <string name="show_password">MOSTRAR CONTRASENYA</string>
+    
+    <!-- Waiter Dashboard -->
+    <string name="waiter_dashboard_title">PANELL DE CAMBRER</string>
+    <string name="waiter_dashboard_welcome">BENVINGUT AL PANELL DE CAMBRER</string>
+    <string name="order_in_process">COMANDA EN PROCÉS PER A %1$s</string>
+    
+    <!-- Order stages -->
+    <string name="stage_starters_drinks">Primers i Begudes</string>
+    <string name="stage_starters">Primers</string>
+    <string name="stage_drinks">Begudes</string>
+    <string name="stage_main_courses">Segons Plats</string>
+    <string name="stage_desserts">Postres</string>
+    <string name="stage_completed">Completat</string>
+    
+    <!-- Category translations for display -->
+    <string name="category_primers_begudes">Primers</string>
+    <string name="category_begudes_separate">Begudes</string>
+
+    <!-- Category translations (complete set) -->
+    <string name="category_primers">PRIMERS</string>
+    <string name="category_begudes">BEGUDES</string>
+    <string name="category_segons">SEGONS PLATS</string>
+    <string name="category_postres">POSTRES</string>
+
+    <!-- Notifications -->
+    <string name="order_ready_message">Comanda llesta per a la taula %1$s: %2$s</string>
+    <string name="notifications_clean_up">Netejant notificacions òrfenes...</string>
+
+    <!-- TablesScreen -->
+    <string name="error_update_table_firebase">Error actualitzant taula a Firebase</string>
+    <string name="error_loading_tables">Error carregant taules: %1$s</string>
+    <string name="select_table_for_details">SELECCIONA UNA TAULA PER VEURE DETALLS</string>
+    <string name="state_occupied">OCUPADA</string>
+    <string name="state_reserved">RESERVADA</string>
+    <string name="state_free">LLIURE</string>
+
+    <!-- TableCard -->
+    <string name="table_clients_count">CLIENTS: %1$d</string>
+    <string name="table_clients_more">+%1$d</string>
+
+    <!-- TableDetails -->
+    <string name="table_prefix">TAULA: %1$d</string>
+    <string name="table_clients">CLIENTS: %1$d</string>
+    <string name="table_orders">COMANDES:</string>
+    <string name="table_more_orders">+ %1$d MÉS...</string>
+    <string name="table_new_order">NOVA COMANDA</string>
+    <string name="table_continue_order">CONTINUAR COMANDA</string>
+    <string name="table_update">ACTUALITZAR</string>
+    <string name="table_decrease_clients">Disminuir clients</string>
+    <string name="table_increase_clients">Augmentar clients</string>
+
+    <!-- OrdersScreen -->
+    <string name="order_title">COMANDA %1$s</string>
+    <string name="order_table_title">COMANDA TAULA %1$d</string>
+    <string name="back">ENRERE</string>
+    <string name="new_order">NOVA</string>
+    <string name="send_order">ENVIAR COMANDA</string>
+    <string name="no_dishes_available">NO HI HA PLATS DISPONIBLES EN AQUESTA CATEGORIA</string>
+    <string name="continue_to_main">CONTINUAR ALS SEGONS PLATS</string>
+    <string name="continue_to_dessert">CONTINUAR ALS POSTRES</string>
+    <string name="finish_order">FINALITZAR COMANDA</string>
+    <string name="next">SEGÜENT</string>
+    <string name="order_completed">COMANDA COMPLETADA!</string>
+    <string name="back_to_tables">TORNAR A TAULES</string>
+    <string name="existing_order_title">COMANDA EXISTENT</string>
+    <string name="existing_order_message">CONTINUAR AMB LA COMANDA EXISTENT O CREAR-NE UNA DE NOVA?</string>
+    <string name="continue_order">CONTINUAR</string>
+    <string name="new_option">NOVA</string>
+    <string name="confirm_send_title">CONFIRMAR ENVIAMENT</string>
+    <string name="confirm_send_message">ENVIAR ELEMENTS SELECCIONATS A LA CUINA?</string>
+    <string name="order_sent">COMANDA ENVIADA</string>
+    <string name="order_sent_success">Comanda enviada correctament</string>
+    <string name="no_dishes_selected">No hi ha plats seleccionats</string>
+    <string name="error_sending_order">Error enviant la comanda</string>
+    <string name="mic_permission_required">Permís de micròfon requerit per a aquesta funció</string>
+    <string name="dictate_observations">DICTAR OBSERVACIONS PER A %1$s</string>
+
+    <!-- OrderItem -->
+    <string name="order_item_image_description">Imatge de %1$s</string>
+    <string name="order_item_sent">ENVIAT</string>
+    <string name="order_item_decrease">Disminuir</string>
+    <string name="order_item_increase">Augmentar</string>
+    <string name="order_item_cooking_point_label">PUNT DE COCCIÓ:</string>
+    <string name="order_item_select_cooking_point">SELECCIONAR PUNT DE COCCIÓ</string>
+    <string name="order_item_dropdown_options">Mostrar opcions</string>
+    <string name="order_item_no_cooking_point">NO ESPECIFICAT</string>
+    <string name="order_item_observations">OBSERVACIONS (OPCIONAL)</string>
+    <string name="order_item_dictate">DICTAR OBSERVACIONS</string>
+    <string name="order_item_voice_input">Entrada de veu per a observacions</string>
+
+    <!-- Table states -->
+    <string name="state_reserved_internal">RESERVADA</string>
+    <string name="state_free_internal">LLIURE</string>
+
+    <!-- Config Screen -->
+    <string name="config_tts_no_permission">No tens permís per utilitzar TTS</string>
+    <string name="config_theme_no_permission">No tens permís per canviar el tema</string>
+    <string name="config_language_english">ANGLÈS</string>
+    <string name="config_language_spanish">ESPANYOL</string>
+    <string name="config_language_catalan">CATALÀ</string>
+    <string name="config_language_no_permission">No tens permís per canviar l\'idioma</string>
+    <string name="config_break_request">SOL·LICITAR DESCANS</string>
+    <string name="config_break_reason">MOTIU (OPCIONAL)</string>
+    <string name="config_cancel">CANCEL·LAR</string>
+    <string name="config_send">ENVIAR</string>
+    <string name="config_break_sent">Sol·licitud enviada correctament</string>
+    <string name="config_close">TANCAR</string>
+    <string name="config_break_no_permission">No tens permís per sol·licitar descans</string>
+    <string name="config_logout">TANCAR SESSIÓ</string>
+    <string name="config_logout_no_permission">No tens permís per tancar la sessió</string>
+    <string name="config_updated_by_admin">La configuració ha estat actualitzada per l\'administrador</string>
+    <string name="config_default_user">USUARI</string>
+    <string name="config_logout_success">Sessió tancada correctament</string>
+
+    <!-- StageSelector -->
+    <string name="stage_selector_title">ETAPES DE LA COMANDA</string>
+    <string name="stage_primers_begudes_name">Primers</string>
+    <string name="stage_begudes_name">Begudes</string>
+    <string name="stage_segons_name">SEGONS PLATS</string>
+    <string name="stage_postres_name">POSTRES</string>
+
+    <!-- ConfirmationDialog -->
+    <string name="dialog_cancel">CANCEL·LAR</string>
+    <string name="dialog_confirm">CONFIRMAR</string>
+
+    <!-- ActionButton -->
+    <string name="next_icon_description">Següent</string>
+
+    <!-- LanguageOption -->
+    <string name="language_option_selected">Idioma %1$s, seleccionat</string>
+    <string name="language_option_not_selected">Idioma %1$s, no seleccionat</string>
+    <string name="selected_icon_description">Seleccionat</string>
+
+    <!-- ThemeOption -->
+    <string name="theme_option_selected">Tema %1$s, seleccionat</string>
+    <string name="theme_option_not_selected">Tema %1$s, no seleccionat</string>
+
+    <!-- Admin Dashboard -->
+    <string name="admin_dashboard_title">Panell d\'Administració</string>
+    <string name="admin_dashboard_welcome">Benvingut al Panell d\'Administració d\'eTable</string>
+
+    <!-- Admin Navigation -->
+    <string name="admin_nav_dashboard">Panell</string>
+    <string name="admin_nav_orders">Comandes</string>
+    <string name="admin_nav_menu">Menú</string>
+    <string name="admin_nav_tables">Taules</string>
+    <string name="admin_nav_users">Usuaris</string>
+    <string name="admin_nav_reservations">Reserves</string>
+    <string name="admin_nav_break_requests">Sol·licituds de Descans</string>
+    <string name="admin_nav_config">Configuració</string>
+
+    <!-- Admin Actions -->
+    <string name="admin_logout">Tancar Sessió</string>
+    <string name="admin_save">Desar</string>
+    <string name="admin_cancel">Cancel·lar</string>
+    <string name="admin_confirm">Confirmar</string>
+    <string name="admin_delete">Eliminar</string>
+    <string name="admin_edit">Editar</string>
+    <string name="admin_add">Afegir</string>
+
+    <!-- Cooking Point -->
+    <string name="cooking_point_rare">Poc fet</string>
+    <string name="cooking_point_medium_rare">Al punt baix</string>
+    <string name="cooking_point_medium">Al punt</string>
+    <string name="cooking_point_medium_well">Ben fet</string>
+    <string name="cooking_point_well_done">Molt fet</string>
+    <string name="tts_cooking_point_selected">Punt de cocció seleccionat: %1$s</string>
+
+    <!-- Config Screen -->
+    <string name="config_title">Configuració</string>
+    <string name="config_back_description">Enrere</string>
+    <string name="config_theme_section">Configuració de Tema</string>
+    <string name="config_language_section">Configuració d\'Idioma</string>
+
+    <!-- Language Names -->
+    <string name="language_name_spanish">Espanyol</string>
+    <string name="language_name_catalan">Català</string>
+    <string name="language_name_english">Anglès</string>
+
+    <!-- Permission Rationales -->
+    <string name="camera_permission_rationale">Es necessita accés a la càmera per fer fotos dels elements del menú</string>
+    <string name="notification_permission_rationale">Es necessita permís de notificació per alertar-te d\'actualitzacions de comandes</string>
+    <string name="microphone_permission_rationale">Es necessita accés al micròfon per a les funcions de dictat per veu</string>
+    <string name="storage_permission_rationale">Es necessita accés a l\'emmagatzematge per desar i carregar imatges</string>
+
+    <!-- Break Request -->
+    <string name="break_request_subtitle">Enviar una sol·licitud de descans a l\'administrador</string>
+    <string name="break_request_dialog_title">Sol·licitud de Descans</string>
+    <string name="break_request_dialog_message">Necessites un descans? Envia una sol·licitud a l\'administrador.</string>
+    <string name="break_request_reason">Motiu (opcional)</string>
+    <string name="break_request_reason_placeholder">Ex.: Descans per dinar</string>
+    <string name="break_request_send">Enviar Sol·licitud</string>
+    <string name="break_request_sent_success">Sol·licitud de descans enviada correctament</string>
+    <string name="break_request_sent_error">Error enviant la sol·licitud de descans</string>
+
+    <!-- Notification Channels -->
+    <string name="notification_channel_orders">Notificacions de Comandes</string>
+    <string name="notification_channel_orders_description">Notificacions per a actualitzacions de comandes i alertes de cuina</string>
+    <string name="notification_channel_categories">Notificacions de Categories</string>
+    <string name="notification_channel_categories_description">Notificacions quan les categories del menú estan llestes</string>
+
+    <!-- Reservation Status -->
+    <string name="reservation_status_confirmed">Confirmada</string>
+    <string name="reservation_status_pending">Pendent</string>
+    <string name="reservation_status_cancelled">Cancel·lada</string>
+
+    <!-- User Roles -->
+    <string name="user_role_display_admin">Administrador</string>
+    <string name="user_role_display_waiter">Cambrer</string>
+    <string name="user_role_admin">Administrador</string>
+    <string name="user_role_waiter">Cambrer</string>
+
+    <!-- User States -->
+    <string name="user_state_active">Actiu</string>
+    <string name="user_status_inactive">Inactiu</string>
+
+    <!-- Menu Notifications -->
+    <string name="menu_notification_starters_drinks">Primers i Begudes</string>
+    <string name="menu_notification_main_courses">Segons Plats</string>
+    <string name="menu_notification_desserts">Postres</string>
+    <string name="menu_notification_category">Categoria %1$s</string>
+    <string name="menu_notification_ready_message">Llest per servir a la taula %1$s</string>
+    <string name="menu_notification_view">Veure</string>
+
+    <!-- Notifications Panel -->
+    <string name="notifications_count">%1$d notificacions</string>
+    <string name="notification_ready_to_serve">LLEST PER SERVIR!</string>
+    <string name="notification_prepared_at">Preparat a les</string>
+    <string name="notification_served_button">SERVIT</string>
+    <string name="notification_dismiss_button">DESCARTAR</string>
+
+    <!-- Order Components -->
+    <string name="admin_orders_cooking_point_prefix">Cocció:</string>
+
+    <!-- Permission Dialog -->
+    <string name="permission_required">Permís Requerit</string>
+    <string name="open_settings">Obrir Configuració</string>
+    <string name="grant_permission">Concedir Permís</string>
+    <string name="cancel">Cancel·lar</string>
+
+    <!-- Menu Item Dialog -->
+    <string name="menu_item_add">Afegir Element del Menú</string>
+    <string name="menu_item_edit">Editar Element del Menú</string>
+    <string name="menu_item_name">Nom de l\'Element</string>
+    <string name="menu_item_category">Categoria</string>
+    <string name="menu_item_available">Disponible</string>
+    <string name="menu_item_cooking_point">Requereix Punt de Cocció</string>
+    <string name="menu_item_cooking_point_info">Habilitar per a elements com la carn que requereixen preferències de cocció</string>
+    <string name="menu_item_image">Imatge de l\'Element</string>
+    <string name="menu_item_gallery">Galeria</string>
+    <string name="menu_item_camera">Càmera</string>
+    <string name="menu_item_save">Desar</string>
+    <string name="menu_item_cancel">Cancel·lar</string>
+
+    <!-- Menu Management -->
+    <string name="menu_category_empty">No hi ha elements en aquesta categoria</string>
+    <string name="menu_category_primers">Primers</string>
+    <string name="menu_category_segons">Segons Plats</string>
+    <string name="menu_category_postres">Postres</string>
+    <string name="menu_category_begudes">Begudes</string>
+    <string name="menu_management_camera_error">Error de càmera</string>
+    <string name="menu_management_save_error">Error desant l\'element</string>
+    <string name="menu_management_add_item">Afegir Element del Menú</string>
+    <string name="menu_management_tab">Menú</string>
+    <string name="menu_management_camera_error_detail">No s\'ha pogut capturar la imatge</string>
+    <string name="menu_management_upload_error">Error de pujada</string>
+    <string name="menu_management_unknown_error">Error desconegut</string>
+    <string name="menu_management_delete_error">Error eliminant l\'element</string>
+
+    <!-- Table Management -->
+    <string name="table_management_customers_count">Clients: %1$d</string>
+    <string name="table_management_add_table">Afegir Taula</string>
+    <string name="table_management_edit_table">Editar Taula</string>
+    <string name="table_management_table_name">Nom de la Taula</string>
+    <string name="table_management_table_state">Estat de la Taula</string>
+    <string name="table_management_customers">Nombre de Clients</string>
+    <string name="table_management_validation_error">Si us plau, omple tots els camps requerits</string>
+    <string name="table_management_save_error">Error desant la taula</string>
+    <string name="table_management_save">Desar</string>
+    <string name="table_management_cancel">Cancel·lar</string>
+    <string name="table_management_empty">No hi ha taules disponibles</string>
+    <string name="table_management_deleted_success">Taula eliminada correctament</string>
+    <string name="table_management_delete_error">Error eliminant la taula</string>
+    <string name="table_management_tab">Taules</string>
+    <string name="table_management_add_error">Error afegint la taula</string>
+    <string name="table_management_update_error">Error actualitzant la taula</string>
+    <string name="table_management_title">Gestió de Taules</string>
+
+    <!-- Admin Orders -->
+    <string name="admin_orders_tab_pending">Pendents</string>
+    <string name="admin_orders_tab_in_progress">En Progrés</string>
+    <string name="admin_orders_tab_ready">Llests</string>
+    <string name="admin_orders_tab_history">Historial</string>
+    <string name="admin_orders_accept_description">Acceptar comanda</string>
+    <string name="admin_orders_accept">Acceptar</string>
+    <string name="admin_orders_quantity_format">Qtat: %1$d</string>
+    <string name="admin_orders_observation_prefix">Nota: %1$s</string>
+    <string name="admin_orders_mark_as_ready">Marcar com a Llest</string>
+    <string name="admin_orders_empty_pending">No hi ha comandes pendents</string>
+    <string name="admin_orders_stage">Etapa: %1$s</string>
+    <string name="admin_orders_stage_unspecified">No especificada</string>
+    <string name="admin_orders_obs_prefix">Nota: %1$s</string>
+    <string name="admin_orders_accept_button">Acceptar</string>
+    <string name="admin_orders_empty_in_progress">No hi ha comandes en progrés</string>
+    <string name="admin_orders_empty_ready">No hi ha comandes llestes</string>
+    <string name="admin_orders_notification_sent">Notificació enviada al cambrer</string>
+    <string name="admin_orders_table_name">Taula %1$s</string>
+    <string name="admin_orders_info_icon_description">Informació de la comanda</string>
+    <string name="admin_orders_deliver_button">Lliurar</string>
+    <string name="admin_orders_accepted_success">Comanda acceptada correctament</string>
+    <string name="admin_orders_accept_error">Error acceptant la comanda</string>
+    <string name="admin_orders_not_found">Comanda no trobada</string>
+    <string name="admin_orders_rejected_success">Comanda rebutjada correctament</string>
+    <string name="admin_orders_total">Total: %1$d elements</string>
+    <string name="admin_orders_reject_error">Error rebutjant la comanda</string>
+    <string name="admin_orders_marked_success">Comanda marcada com a llesta</string>
+    <string name="admin_orders_completed_success">Comanda completada correctament</string>
+    <string name="admin_orders_complete_error">Error completant la comanda</string>
+    <string name="admin_orders_stage_sent">Notificació d\'etapa enviada</string>
+    <string name="admin_orders_stage_update_error">Error actualitzant l\'etapa</string>
+    <string name="admin_orders_status_update_error">Error actualitzant l\'estat</string>
+    <string name="admin_orders_not_found_for_stage">Comanda no trobada per a l\'actualització d\'etapa</string>
+
+    <!-- Admin History -->
+    <string name="admin_history_empty">No hi ha historial de comandes disponible</string>
+    <string name="admin_history_stage_other">Altra</string>
+    <string name="admin_history_table_name">Taula %1$s</string>
+    <string name="admin_history_complete_order">Comanda Completa</string>
+    <string name="admin_history_quantity_format">Qtat: %1$d</string>
+    <string name="admin_history_stage_primers">Primers</string>
+    <string name="admin_history_stage_segons">Segons Plats</string>
+    <string name="admin_history_stage_postres">Postres</string>
+
+    <!-- Reservations -->
+    <string name="reservation_error_saving">Error desant la reserva</string>
+    <string name="reservation_error_deleting">Error eliminant la reserva</string>
+    <string name="admin_reservations_add">Afegir Reserva</string>
+    <string name="admin_reservations_empty">No hi ha reserves</string>
+    <string name="reservation_label_date">Data:</string>
+    <string name="reservation_label_time">Hora:</string>
+    <string name="reservation_label_people">Persones:</string>
+    <string name="reservation_label_table">Taula:</string>
+    <string name="reservation_table_id">Taula %1$d</string>
+    <string name="reservation_label_phone">Telèfon:</string>
+    <string name="admin_reservations_edit">Editar</string>
+    <string name="admin_reservations_delete">Eliminar</string>
+    <string name="admin_reservations_new">Nova Reserva</string>
+    <string name="admin_reservations_edit_title">Editar Reserva</string>
+    <string name="admin_reservations_close">Tancar</string>
+    <string name="reservation_client_name">Nom del Client</string>
+    <string name="reservation_date">Data</string>
+    <string name="reservation_time">Hora</string>
+    <string name="reservation_people">Nombre de Persones</string>
+    <string name="reservation_phone">Telèfon</string>
+    <string name="reservation_select_table">Seleccionar Taula</string>
+    <string name="reservation_table">Taula</string>
+    <string name="reservation_loading_tables">Carregant taules...</string>
+    <string name="reservation_no_tables">No hi ha taules disponibles</string>
+    <string name="reservation_table_status">%1$s - %2$s</string>
+    <string name="reservation_status">Estat de la Reserva</string>
+    <string name="reservation_cancel">Cancel·lar</string>
+    <string name="reservation_save">Desar</string>
+    <string name="reservation_error_loading_tables">Error carregant les taules</string>
+
+    <!-- Users Management -->
+    <string name="users_add">Afegir Usuari</string>
+    <string name="users_empty">No s\'han trobat usuaris</string>
+    <string name="user_deleted_success">Usuari eliminat correctament</string>
+    <string name="user_delete_error">Error eliminant l\'usuari</string>
+    <string name="validation_email_required">El correu és requerit</string>
+    <string name="validation_password_required">La contrasenya és requerida</string>
+    <string name="validation_password_length">La contrasenya ha de tenir almenys 6 caràcters</string>
+    <string name="validation_fullname_required">El nom complet és requerit</string>
+    <string name="user_created_success">Usuari creat correctament</string>
+    <string name="user_updated_success">Usuari actualitzat correctament</string>
+    <string name="user_update_error">Error actualitzant l\'usuari</string>
+    <string name="user_config_updated">Configuració d\'usuari actualitzada</string>
+    <string name="user_config_update_error">Error actualitzant la configuració d\'usuari</string>
+    <string name="users_edit">Editar</string>
+    <string name="add_user_title">Afegir Nou Usuari</string>
+    <string name="add_user_email">Correu</string>
+    <string name="add_user_password">Contrasenya</string>
+    <string name="add_user_fullname">Nom Complet</string>
+    <string name="add_user_button">Afegir Usuari</string>
+    <string name="add_user_cancel">Cancel·lar</string>
+    <string name="user_edit_title">Editar Usuari</string>
+    <string name="user_config_title">Configuració d\'Usuari</string>
+    <string name="user_config_current_config">Configuració Actual</string>
+    <string name="user_config_dark_theme">Tema Fosc</string>
+    <string name="user_config_text_size">Mida del Text</string>
+    <string name="user_config_current_language">Idioma Actual</string>
+    <string name="language_display_es">Espanyol</string>
+    <string name="language_display_ca">Català</string>
+    <string name="language_display_en">Anglès</string>
+    <string name="user_config_accessibility">Accessibilitat</string>
+    <string name="user_config_allow_tts">Permetre Text a Veu</string>
+    <string name="user_config_allow_break">Permetre Sol·licituds de Descans</string>
+    <string name="user_config_allow_theme">Permetre Canvis de Tema</string>
+    <string name="user_config_allow_logout">Permetre Tancar Sessió</string>
+    <string name="user_config_allow_language">Permetre Canvis d\'Idioma</string>
+    <string name="user_config_allow_textsize">Permetre Canvis de Mida de Text</string>
+    <string name="user_config_allowed_themes">Temes Permesos</string>
+    <string name="user_config_select_themes">Seleccionar temes permesos</string>
+    <string name="user_config_save">Desar Configuració</string>
+    <string name="user_role_label">Rol d\'Usuari:</string>
+
+    <!-- Stages -->
+    <string name="stage_primers_begudes">Primers i Begudes</string>
+    <string name="stage_segons">Segons Plats</string>
+    <string name="stage_postres">Postres</string>
+    <string name="stage_finalizada">Finalitzat</string>
+
+    <!-- Theme Names -->
+    <string name="theme_name_light">Clar</string>
+    <string name="theme_name_dark">Fosc</string>
+    <string name="theme_name_ocean">Oceà</string>
+    <string name="theme_name_sunset">Posta de Sol</string>
+    <string name="theme_name_nature">Natura</string>
+    <string name="theme_name_purple">Violeta</string>
+    <string name="theme_name_monochrome">Monocrom</string>
+    <string name="theme_name_autumn">Tardor</string>
+    <string name="theme_name_vintage">Vintage</string>
+    <string name="theme_name_fire">Foc</string>
+    <string name="theme_name_midnight">Mitjanit</string>
+    <string name="theme_name_forest">Bosc</string>
+
+    <!-- Theme Descriptions -->
+    <string name="theme_desc_light">Interfície neta i brillant</string>
+    <string name="theme_desc_dark">Aparença fosca i elegant</string>
+    <string name="theme_desc_ocean">Tons blaus inspirats en el mar</string>
+    <string name="theme_desc_sunset">Colors càlids taronges i àmbar</string>
+    <string name="theme_desc_nature">Tons verds inspirats en la natura</string>
+    <string name="theme_desc_purple">Tons elegants violetes i lavanda</string>
+    <string name="theme_desc_monochrome">Disseny simple en blanc i negre</string>
+    <string name="theme_desc_autumn">Colors càlids de tardor</string>
+    <string name="theme_desc_vintage">Disseny clàssic i atemporal</string>
+    <string name="theme_desc_fire">Tons intensos vermells i taronges</string>
+    <string name="theme_desc_midnight">Blau fosc profund per a ús nocturn</string>
+    <string name="theme_desc_forest">Tons verds profunds com un bosc</string>
+
+    <!-- Order Item -->
+    <string name="order_item_quantity_format">Qtat: %1$d</string>
+
+    <!-- Error Messages -->
+    <string name="error_loading_orders_generic">Error carregant comandes</string>
+    <string name="unknown_viewmodel_error">Classe ViewModel desconeguda</string>
+
+    <!-- Theme Applied Messages -->
+    <string name="theme_applied_dark">Tema fosc aplicat</string>
+    <string name="theme_applied_light">Tema clar aplicat</string>
+    <string name="theme_applied_ocean">Tema oceà aplicat</string>
+    <string name="theme_applied_sunset">Tema posta de sol aplicat</string>
+    <string name="theme_applied_nature">Tema natura aplicat</string>
+    <string name="theme_applied_purple">Tema violeta aplicat</string>
+    <string name="theme_applied_monochrome">Tema monocrom aplicat</string>
+    <string name="theme_applied_autumn">Tema tardor aplicat</string>
+    <string name="theme_applied_vintage">Tema vintage aplicat</string>
+    <string name="theme_applied_fire">Tema foc aplicat</string>
+    <string name="theme_applied_midnight">Tema mitjanit aplicat</string>
+    <string name="theme_applied_forest">Tema bosc aplicat</string>
+
+    <!-- Language Switch Descriptions -->
+    <string name="switch_language_icon_description">Canviar idioma</string>
+
+    <!-- Admin Config -->
+    <string name="admin_config_role_label">ADMINISTRADOR</string>
+    <string name="admin_config_logout_description">Tancar sessió del sistema</string>
+    <string name="admin_config_logout">TANCAR SESSIÓ</string>
+
+    <!-- Language Codes and Countries -->
+    <string name="language_code_spanish">ES</string>
+    <string name="language_country_spanish">Espanya</string>
+    <string name="language_code_catalan">CA</string>
+    <string name="language_country_catalan">Catalunya</string>
+    <string name="language_code_english">EN</string>
+    <string name="language_country_english">Regne Unit</string>
+
+    <!-- Theme Names (simple references without prefix) -->
+    <string name="theme_light">Clar</string>
+    <string name="theme_dark">Fosc</string>
+    <string name="theme_ocean">Oceà</string>
+    <string name="theme_sunset">Posta de Sol</string>
+    <string name="theme_nature">Natura</string>
+    <string name="theme_purple">Violeta</string>
+    <string name="theme_monochrome">Monocrom</string>
+    <string name="theme_autumn">Tardor</string>
+    <string name="theme_vintage">Vintage</string>
+    <string name="theme_fire">Foc</string>
+    <string name="theme_midnight">Mitjanit</string>
+    <string name="theme_forest">Bosc</string>
+
+    <!-- Waiter Config Screen -->
+    <string name="loading_user_permissions">Carregant permisos d\'usuari...</string>
+    <string name="no_config_permissions">No tens permís per accedir a les opcions de configuració</string>
+
+    <!-- Additional Break Request -->
+    <string name="break_request_from">De: %1$s</string>
+    <string name="break_request_content_empty">Sense motiu especificat</string>
+    <string name="break_request_default">Sol·licitud de descans</string>
+    <string name="user_unknown">Usuari desconegut</string>
+
+    <!-- Break Messages -->
+    <string name="break_messages_title">MISSATGES DE DESCANS</string>
+    <string name="break_request_empty">No hi ha sol·licituds de descans disponibles</string>
+    <string name="break_request_mark_read">Marcar tot com a llegit</string>
+    <string name="break_request_mark_read_success">Tots els missatges marcats com a llegits</string>
+    <string name="break_request_mark_read_error">Error marcant els missatges com a llegits</string>
+    <string name="break_notification_received">Nova sol·licitud de descans rebuda</string>
+    <string name="break_request_status_approved">APROVAT</string>
+    <string name="break_request_status_rejected">REBUTJAT</string>
+    <string name="break_request_status_pending">PENDENT</string>
+    <string name="break_request_notification_channel_name">Sol·licituds de Descans</string>
+    <string name="break_request_notification_channel_description">Notificacions per a sol·licituds de descans del personal</string>
+    <string name="break_request_update_error">Error actualitzant la sol·licitud de descans</string>
+    <string name="break_request_accept">ACCEPTAR</string>
+    <string name="break_request_reject">REBUTJAR</string>
+    <string name="break_request_title">Sol·licitud de Descans</string>
+
+    <!-- Break Request Notifications -->
+    <string name="break_requests_channel_name">Sol·licituds de Descans</string>
+    <string name="break_requests_channel_description">Notificacions de noves sol·licituds de descans</string>
+    <string name="break_notification_title">Nova sol·licitud de descans</string>
+    <string name="break_notification_from">Sol·licitud de %1$s</string>
+    <string name="break_notification_description">Notificació de sol·licitud de descans</string>
+
+    <!-- Table States -->
+    <string name="table_state_occupied">OCUPADA</string>
+    <string name="table_state_reserved">RESERVADA</string>
+    <string name="table_state_free">LLIURE</string>
+
+    <!-- TTS Messages -->
+    <string name="tts_activated">Text a veu activat</string>
+    <string name="tts_language_changed">Idioma canviat a %1$s</string>
+    <string name="tts_voice_not_available">Veu no disponible per a aquest idioma</string>
+    
+    <!-- Navigation TTS -->
+    <string name="tts_go_to_tables">Anar a taules</string>
+    <string name="tts_go_to_orders">Anar a comandes</string>
+    <string name="tts_go_to_config">Anar a configuració</string>
+    
+    <!-- Table TTS -->
+    <string name="tts_table_occupied">Taula %1$s ocupada amb %2$d clients</string>
+    <string name="tts_table_reserved">Taula %1$s reservada</string>
+    <string name="tts_table_free">Taula %1$s lliure</string>
+    
+    <!-- Order TTS -->
+    <string name="tts_quantity_increased">%1$s: quantitat augmentada a %2$d</string>
+    <string name="tts_quantity_decreased">%1$s: quantitat disminuïda a %2$d</string>
+    <string name="tts_dish_selected">Plat seleccionat: %1$s</string>
+
+    <!-- TTS Additional Strings -->
+    <string name="tts_button_clicked">Botó premut</string>
+    <string name="tts_table_selected">Taula %1$s seleccionada</string>
+    <string name="tts_table_state">Taula %1$s està %2$s</string>
+    <string name="tts_item_added">Element afegit</string>
+    <string name="tts_item_removed">Element eliminat</string>
+    <string name="tts_category_selected">Categoria seleccionada: %1$s</string>
+    <string name="tts_stage_selected">Etapa seleccionada: %1$s</string>
+    <string name="tts_notification_received">Notificació rebuda per a la taula %1$s: %2$s</string>
+    <string name="tts_notification_order_ready">Comanda llesta per a la taula %1$s: %2$s</string>
+    <string name="tts_category_ready">Categoria %1$s està llesta</string>
+    <string name="tts_table_state_free">lliure</string>
+    <string name="tts_table_state_occupied">ocupada</string>
+    <string name="tts_table_state_reserved">reservada</string>
+    <string name="tts_clients_increased">Clients augmentats a %1$d per a la taula %2$s</string>
+    <string name="tts_clients_decreased">Clients disminuïts a %1$d per a la taula %2$s</string>
+    <string name="tts_no_clients">Sense clients a la taula %1$s</string>
+    <string name="tts_item_quantity_increased">%1$s: quantitat augmentada a %2$d</string>
+    <string name="tts_item_quantity_decreased">%1$s: quantitat disminuïda a %2$d</string>
+    <string name="tts_item_removed_from_order">%1$s eliminat de la comanda</string>
+    <string name="speak">Parlar</string>
+
+    <!-- Voice Quality Indicators -->
+    <string name="voice_quality_excellent">Excel·lent</string>
+    <string name="voice_quality_good">Bona</string>
+    <string name="voice_quality_fair">Regular</string>
+    <string name="voice_quality_poor">Dolenta</string>
+
+    <!-- TTS Test Messages -->
+    <string name="config_test_tts_message">Aquesta és una prova del sistema de text a veu</string>
+    <string name="config_voice_section_title">Configuració de Veu</string>
+    <string name="config_voice_enable">Habilitar Text a Veu</string>
+    <string name="config_voice_engine_missing">Motor TTS Absent</string>
+    <string name="config_voice_install">Instal·lar Motor de Veu</string>
+    <string name="config_test_tts">Provar TTS</string>
+    <string name="config_test_tts_quantities">Provar TTS Quantitats</string>
+    <string name="config_test_tts_cooking">Provar TTS Punts de Cocció</string>
+    <string name="config_test_tts_notifications">Provar TTS Notificacions</string>
+
+    <string name="config_no_permissions_available">No hi ha opcions disponibles</string>
+    <string name="config_contact_admin_for_access">Contacta l\'administrador per a l\'accés</string>
+    <string name="config_tts_title">Text a Veu</string>
+    <string name="config_tts_description">Habilitar text a veu per a la navegació</string>
+    <string name="config_text_size_section">Mida del Text</string>
+
+    <!-- TTS Notification Messages -->
+    <string name="tts_new_notification">Nova notificació</string>
+    <string name="tts_table_number">taula %1$s</string>
+    <string name="tts_ready_to_serve">llest per servir</string>
+    <string name="tts_notification_full">Nova notificació: taula %1$s, %2$s llest per servir</string>
+
+    <!-- TTS Stage Names -->
+    <string name="tts_stage_primers_begudes">primers i begudes</string>
+    <string name="tts_stage_primers">primers</string>
+    <string name="tts_stage_begudes">begudes</string>
+    <string name="tts_stage_segons">segons plats</string>
+    <string name="tts_stage_postres">postres</string>
+    <string name="tts_stage_unknown">categoria desconeguda</string>
+
+    <!-- TTS Button Actions -->
+    <string name="tts_button_served">Servit</string>
+    <string name="tts_button_dismiss">Descartar</string>
+    <string name="tts_button_new_order">Nova comanda</string>
+    <string name="tts_button_continue_order">Continuar comanda</string>
+    <string name="tts_button_send_order">Enviar comanda</string>
+    <string name="tts_button_update_table">Actualitzar taula</string>
+
+    <!-- User Configuration - Language Permissions -->
+    <string name="user_config_allowed_languages">Idiomes Permesos</string>
+    <string name="user_config_select_languages">Seleccionar idiomes permesos</string>
+    <string name="language_permission_spanish">Espanyol</string>
+    <string name="language_permission_catalan">Català</string>
+    <string name="language_permission_english">Anglès</string>
+
+    <!-- User Configuration Additional Strings -->
+    <string name="user_config_tts_enabled">Texto a Voz Habilitado</string>
+    <string name="user_config_accessibility_enabled">Accesibilidad Habilitada</string>
+    <string name="user_config_allow_break_request">Permitir Solicitudes de Descanso</string>
+    <string name="user_config_allow_theme_change">Permitir Cambio de Tema</string>
+    <string name="user_config_allow_language_change">Permitir Cambio de Idioma</string>
+
+    <!-- Añadir a strings-ca.xml -->
+    <string name="category_primers_only">Primers</string>
+    <string name="category_begudes_only">Begudes</string>
+    <string name="category_primers_begudes_combined">PRIMERS I BEGUDES</string>
+
+    <!-- User Creation Restrictions -->
+    <string name="user_creation_waiter_only">Només pots crear usuaris cambrers</string>
+    <string name="user_creation_no_admin_permission">No tens permisos per crear administradors</string>
+    <string name="user_edit_no_admin_permission">No pots modificar altres administradors</string>
+    <string name="validation_role_required">Selecciona un rol vàlid</string> <!-- catalán -->
+
+    <!-- Accesibilidad y textos de UI (mejoras-ui) -->
+    <string name="login_error_credentials">Correu o contrasenya incorrectes</string>
+    <string name="login_error_role">Aquest usuari no té el rol seleccionat</string>
+    <string name="login_error_inactive">Usuari no trobat o desactivat</string>
+    <string name="login_error_generic">No s\'ha pogut iniciar la sessió. Torna-ho a provar.</string>
+    <string name="order_ready_title">Comanda a punt!</string>
+    <string name="notif_table_label">Taula: %1$s</string>
+    <string name="notif_dishes_ready_title">%1$s A PUNT!</string>
+    <string name="notif_dishes_ready_message">Els plats estan a punt per servir</string>
+    <string name="notif_dishes_icon_description">Notificació de plats</string>
+    <string name="notif_category_ready_description">Categoria a punt</string>
+    <string name="tables_tap_hint">Toca una taula per veure\'n la informació</string>
+    <string name="text_size_sample">Text de mostra</string>
+    <string name="text_size_decrease">Reduir la mida del text</string>
+    <string name="text_size_increase">Augmentar la mida del text</string>
+    <string name="menu_item_delete_description">Eliminar plat</string>
+    <string name="image_preview">Previsualització de la imatge</string>
+    <string name="image_select">Seleccionar imatge</string>
+    <string name="user_email_value">Correu: %1$s</string>
+    <string name="user_id_value">ID: %1$s</string>
+    <string name="order_item_observations_hint">Sense sal, etc…</string>
+    <string name="close_image">Tancar la imatge</string>
+    <string name="switch_state_on">activat</string>
+    <string name="switch_state_off">desactivat</string>
+
+</resources>

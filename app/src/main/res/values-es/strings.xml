@@ -1,0 +1,688 @@
+<resources>
+    <string name="app_name">eTable</string>
+    <string name="login_title">Iniciar Sesión</string>
+    <string name="username_hint">Nombre de usuario</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="login_button">Iniciar Sesión</string>
+    
+    <!-- Texts for LoginActivity -->
+    <string name="role_waiter">CAMARERO</string>
+    <string name="role_admin">ADMIN</string>
+    <string name="login_as">INICIAR SESIÓN COMO %1$s</string>
+    <string name="enter_credentials">INTRODUCE TUS CREDENCIALES</string>
+    <string name="email_label">DIRECCIÓN DE EMAIL</string>
+    <string name="password_label">CONTRASEÑA</string>
+    <string name="login_button_text">INICIAR SESIÓN</string>
+    <string name="cancel_button">CANCELAR</string>
+    <string name="verify_roles_debug">VERIFICAR ROLES (DEBUG)</string>
+    <string name="enter_email_password">INTRODUCE EMAIL Y CONTRASEÑA</string>
+    <string name="hide_password">OCULTAR CONTRASEÑA</string>
+    <string name="show_password">MOSTRAR CONTRASEÑA</string>
+    
+    <!-- Waiter Dashboard -->
+    <string name="waiter_dashboard_title">PANEL DE CAMARERO</string>
+    <string name="waiter_dashboard_welcome">BIENVENIDO AL PANEL DE CAMARERO</string>
+    <string name="order_in_process">PEDIDO EN PROCESO PARA %1$s</string>
+    
+    <!-- Order stages -->
+    <string name="stage_starters_drinks">Entrantes y Bebidas</string>
+    <string name="stage_starters">Entrantes</string>
+    <string name="stage_drinks">Bebidas</string>
+    <string name="stage_main_courses">Platos Principales</string>
+    <string name="stage_desserts">Postres</string>
+    <string name="stage_completed">Completado</string>
+    
+    <!-- Category translations for display -->
+    <string name="category_primers_begudes">ENTRANTES</string>
+    <string name="category_begudes_separate">BEBIDAS</string>
+
+    <!-- Category translations (complete set) -->
+    <string name="category_primers">ENTRANTES</string>
+    <string name="category_begudes">BEBIDAS</string>
+    <string name="category_segons">PLATOS PRINCIPALES</string>
+    <string name="category_postres">POSTRES</string>
+
+    <!-- Notifications -->
+    <string name="order_ready_message">Pedido listo para la mesa %1$s: %2$s</string>
+    <string name="notifications_clean_up">Limpiando notificaciones huérfanas...</string>
+
+    <!-- TablesScreen -->
+    <string name="error_update_table_firebase">Error actualizando mesa en Firebase</string>
+    <string name="error_loading_tables">Error cargando mesas: %1$s</string>
+    <string name="select_table_for_details">SELECCIONA UNA MESA PARA VER DETALLES</string>
+    <string name="state_occupied">OCUPADA</string>
+    <string name="state_reserved">RESERVADA</string>
+    <string name="state_free">LIBRE</string>
+
+    <!-- TableCard -->
+    <string name="table_clients_count">CLIENTES: %1$d</string>
+    <string name="table_clients_more">+%1$d</string>
+
+    <!-- TableDetails -->
+    <string name="table_prefix">MESA: %1$d</string>
+    <string name="table_clients">CLIENTES: %1$d</string>
+    <string name="table_orders">PEDIDOS:</string>
+    <string name="table_more_orders">+ %1$d MÁS...</string>
+    <string name="table_new_order">NUEVO PEDIDO</string>
+    <string name="table_continue_order">CONTINUAR PEDIDO</string>
+    <string name="table_update">ACTUALIZAR</string>
+    <string name="table_decrease_clients">Disminuir clientes</string>
+    <string name="table_increase_clients">Aumentar clientes</string>
+
+    <!-- OrdersScreen -->
+    <string name="order_title">PEDIDO %1$s</string>
+    <string name="order_table_title">PEDIDO MESA %1$d</string>
+    <string name="back">ATRÁS</string>
+    <string name="new_order">NUEVO</string>
+    <string name="send_order">ENVIAR PEDIDO</string>
+    <string name="no_dishes_available">NO HAY PLATOS DISPONIBLES EN ESTA CATEGORÍA</string>
+    <string name="continue_to_main">CONTINUAR A PLATOS PRINCIPALES</string>
+    <string name="continue_to_dessert">CONTINUAR A POSTRES</string>
+    <string name="finish_order">FINALIZAR PEDIDO</string>
+    <string name="next">SIGUIENTE</string>
+    <string name="order_completed">¡PEDIDO COMPLETADO!</string>
+    <string name="back_to_tables">VOLVER A MESAS</string>
+    <string name="existing_order_title">PEDIDO EXISTENTE</string>
+    <string name="existing_order_message">¿CONTINUAR CON EL PEDIDO EXISTENTE O CREAR UNO NUEVO?</string>
+    <string name="continue_order">CONTINUAR</string>
+    <string name="new_option">NUEVO</string>
+    <string name="confirm_send_title">CONFIRMAR ENVÍO</string>
+    <string name="confirm_send_message">¿ENVIAR ELEMENTOS SELECCIONADOS A COCINA?</string>
+    <string name="order_sent">PEDIDO ENVIADO</string>
+    <string name="order_sent_success">Pedido enviado correctamente</string>
+    <string name="no_dishes_selected">No hay platos seleccionados</string>
+    <string name="error_sending_order">Error enviando pedido</string>
+    <string name="mic_permission_required">Permiso de micrófono requerido para esta función</string>
+    <string name="dictate_observations">DICTAR OBSERVACIONES PARA %1$s</string>
+
+    <!-- OrderItem -->
+    <string name="order_item_image_description">Imagen de %1$s</string>
+    <string name="order_item_sent">ENVIADO</string>
+    <string name="order_item_decrease">Disminuir</string>
+    <string name="order_item_increase">Aumentar</string>
+    <string name="order_item_cooking_point_label">PUNTO DE COCCIÓN:</string>
+    <string name="order_item_select_cooking_point">SELECCIONAR PUNTO DE COCCIÓN</string>
+    <string name="order_item_dropdown_options">Mostrar opciones</string>
+    <string name="order_item_no_cooking_point">NO ESPECIFICADO</string>
+    <string name="order_item_observations">OBSERVACIONES (OPCIONAL)</string>
+    <string name="order_item_dictate">DICTAR OBSERVACIONES</string>
+    <string name="order_item_voice_input">Entrada de voz para observaciones</string>
+
+    <!-- Table states -->
+    <string name="state_reserved_internal">RESERVADA</string>
+    <string name="state_free_internal">LIBRE</string>
+
+    <!-- Config Screen -->
+    <string name="config_tts_no_permission">No tienes permiso para usar TTS</string>
+    <string name="config_theme_no_permission">No tienes permiso para cambiar el tema</string>
+    <string name="config_language_english">INGLÉS</string>
+    <string name="config_language_spanish">ESPAÑOL</string>
+    <string name="config_language_catalan">CATALÁN</string>
+    <string name="config_language_no_permission">No tienes permiso para cambiar el idioma</string>
+    <string name="config_break_request">SOLICITAR DESCANSO</string>
+    <string name="config_break_reason">MOTIVO (OPCIONAL)</string>
+    <string name="config_cancel">CANCELAR</string>
+    <string name="config_send">ENVIAR</string>
+    <string name="config_break_sent">Solicitud enviada correctamente</string>
+    <string name="config_close">CERRAR</string>
+    <string name="config_break_no_permission">No tienes permiso para solicitar descanso</string>
+    <string name="config_logout">CERRAR SESIÓN</string>
+    <string name="config_logout_no_permission">No tienes permiso para cerrar sesión</string>
+    <string name="config_updated_by_admin">La configuración ha sido actualizada por el administrador</string>
+    <string name="config_default_user">USUARIO</string>
+    <string name="config_logout_success">Sesión cerrada correctamente</string>
+
+    <!-- StageSelector -->
+    <string name="stage_selector_title">ETAPAS DEL PEDIDO</string>
+    <string name="stage_primers_begudes_name">ENTRANTES</string>
+    <string name="stage_begudes_name">BEBIDAS</string>
+    <string name="stage_segons_name">PLATOS PRINCIPALES</string>
+    <string name="stage_postres_name">POSTRES</string>
+
+    <!-- ConfirmationDialog -->
+    <string name="dialog_cancel">CANCELAR</string>
+    <string name="dialog_confirm">CONFIRMAR</string>
+
+    <!-- ActionButton -->
+    <string name="next_icon_description">Siguiente</string>
+
+    <!-- LanguageOption -->
+    <string name="language_option_selected">Idioma %1$s, seleccionado</string>
+    <string name="language_option_not_selected">Idioma %1$s, no seleccionado</string>
+    <string name="selected_icon_description">Seleccionado</string>
+
+    <!-- ThemeOption -->
+    <string name="theme_option_selected">Tema %1$s, seleccionado</string>
+    <string name="theme_option_not_selected">Tema %1$s, no seleccionado</string>
+
+    <!-- Admin Dashboard -->
+    <string name="admin_dashboard_title">Panel de Administración</string>
+    <string name="admin_dashboard_welcome">Bienvenido al Panel de Administración de eTable</string>
+
+    <!-- Admin Navigation -->
+    <string name="admin_nav_dashboard">Panel</string>
+    <string name="admin_nav_orders">Pedidos</string>
+    <string name="admin_nav_menu">Menú</string>
+    <string name="admin_nav_tables">Mesas</string>
+    <string name="admin_nav_users">Usuarios</string>
+    <string name="admin_nav_reservations">Reservas</string>
+    <string name="admin_nav_break_requests">Solicitudes de Descanso</string>
+    <string name="admin_nav_config">Configuración</string>
+
+    <!-- Admin Actions -->
+    <string name="admin_logout">Cerrar Sesión</string>
+    <string name="admin_save">Guardar</string>
+    <string name="admin_cancel">Cancelar</string>
+    <string name="admin_confirm">Confirmar</string>
+    <string name="admin_delete">Eliminar</string>
+    <string name="admin_edit">Editar</string>
+    <string name="admin_add">Añadir</string>
+
+    <!-- Cooking Point -->
+    <string name="cooking_point_rare">Poco hecho</string>
+    <string name="cooking_point_medium_rare">Al punto bajo</string>
+    <string name="cooking_point_medium">Al punto</string>
+    <string name="cooking_point_medium_well">Bien hecho</string>
+    <string name="cooking_point_well_done">Muy hecho</string>
+    <string name="tts_cooking_point_selected">Punto de cocción seleccionado: %1$s</string>
+
+    <!-- Config Screen -->
+    <string name="config_title">Configuración</string>
+    <string name="config_back_description">Atrás</string>
+    <string name="config_theme_section">Configuración de Tema</string>
+    <string name="config_language_section">Configuración de Idioma</string>
+
+    <!-- Language Names -->
+    <string name="language_name_spanish">Español</string>
+    <string name="language_name_catalan">Catalán</string>
+    <string name="language_name_english">Inglés</string>
+
+    <!-- Permission Rationales -->
+    <string name="camera_permission_rationale">Se necesita acceso a la cámara para tomar fotos de los elementos del menú</string>
+    <string name="notification_permission_rationale">Se necesita permiso de notificación para alertarte de actualizaciones de pedidos</string>
+    <string name="microphone_permission_rationale">Se necesita acceso al micrófono para las funciones de dictado por voz</string>
+    <string name="storage_permission_rationale">Se necesita acceso al almacenamiento para guardar y cargar imágenes</string>
+
+    <!-- Break Request -->
+    <string name="break_request_subtitle">Enviar una solicitud de descanso al administrador</string>
+    <string name="break_request_dialog_title">Solicitud de Descanso</string>
+    <string name="break_request_dialog_message">¿Necesitas un descanso? Envía una solicitud al administrador.</string>
+    <string name="break_request_reason">Motivo (opcional)</string>
+    <string name="break_request_reason_placeholder">Ej.: Descanso para almorzar</string>
+    <string name="break_request_send">Enviar Solicitud</string>
+    <string name="break_request_sent_success">Solicitud de descanso enviada correctamente</string>
+    <string name="break_request_sent_error">Error enviando solicitud de descanso</string>
+
+    <!-- Notification Channels -->
+    <string name="notification_channel_orders">Notificaciones de Pedidos</string>
+    <string name="notification_channel_orders_description">Notificaciones para actualizaciones de pedidos y alertas de cocina</string>
+    <string name="notification_channel_categories">Notificaciones de Categorías</string>
+    <string name="notification_channel_categories_description">Notificaciones cuando las categorías del menú están listas</string>
+
+    <!-- Reservation Status -->
+    <string name="reservation_status_confirmed">Confirmada</string>
+    <string name="reservation_status_pending">Pendiente</string>
+    <string name="reservation_status_cancelled">Cancelada</string>
+
+    <!-- User Roles -->
+    <string name="user_role_display_admin">Administrador</string>
+    <string name="user_role_display_waiter">Camarero</string>
+    <string name="user_role_admin">Administrador</string>
+    <string name="user_role_waiter">Camarero</string>
+
+    <!-- User States -->
+    <string name="user_state_active">Activo</string>
+    <string name="user_status_inactive">Inactivo</string>
+
+    <!-- Menu Notifications -->
+    <string name="menu_notification_starters_drinks">Entrantes y Bebidas</string>
+    <string name="menu_notification_main_courses">Platos Principales</string>
+    <string name="menu_notification_desserts">Postres</string>
+    <string name="menu_notification_category">Categoría %1$s</string>
+    <string name="menu_notification_ready_message">Listo para servir en la mesa %1$s</string>
+    <string name="menu_notification_view">Ver</string>
+
+    <!-- Notifications Panel -->
+    <string name="notifications_count">%1$d notificaciones</string>
+    <string name="notification_ready_to_serve">¡LISTO PARA SERVIR!</string>
+    <string name="notification_prepared_at">Preparado a las</string>
+    <string name="notification_served_button">SERVIDO</string>
+    <string name="notification_dismiss_button">DESCARTAR</string>
+
+    <!-- Order Components -->
+    <string name="admin_orders_cooking_point_prefix">Cocción:</string>
+
+    <!-- Permission Dialog -->
+    <string name="permission_required">Permiso Requerido</string>
+    <string name="open_settings">Abrir Configuración</string>
+    <string name="grant_permission">Conceder Permiso</string>
+    <string name="cancel">Cancelar</string>
+
+    <!-- Menu Item Dialog -->
+    <string name="menu_item_add">Añadir Elemento del Menú</string>
+    <string name="menu_item_edit">Editar Elemento del Menú</string>
+    <string name="menu_item_name">Nombre del Elemento</string>
+    <string name="menu_item_category">Categoría</string>
+    <string name="menu_item_available">Disponible</string>
+    <string name="menu_item_cooking_point">Requiere Punto de Cocción</string>
+    <string name="menu_item_cooking_point_info">Habilitar para elementos como carne que requieren preferencias de cocción</string>
+    <string name="menu_item_image">Imagen del Elemento</string>
+    <string name="menu_item_gallery">Galería</string>
+    <string name="menu_item_camera">Cámara</string>
+    <string name="menu_item_save">Guardar</string>
+    <string name="menu_item_cancel">Cancelar</string>
+
+    <!-- Menu Management -->
+    <string name="menu_category_empty">No hay elementos en esta categoría</string>
+    <string name="menu_category_primers">Entrantes</string>
+    <string name="menu_category_segons">Platos Principales</string>
+    <string name="menu_category_postres">Postres</string>
+    <string name="menu_category_begudes">Bebidas</string>
+    <string name="menu_management_camera_error">Error de cámara</string>
+    <string name="menu_management_save_error">Error guardando elemento</string>
+    <string name="menu_management_add_item">Añadir Elemento del Menú</string>
+    <string name="menu_management_tab">Menú</string>
+    <string name="menu_management_camera_error_detail">No se pudo capturar la imagen</string>
+    <string name="menu_management_upload_error">Error de subida</string>
+    <string name="menu_management_unknown_error">Error desconocido</string>
+    <string name="menu_management_delete_error">Error eliminando elemento</string>
+
+    <!-- Table Management -->
+    <string name="table_management_customers_count">Clientes: %1$d</string>
+    <string name="table_management_add_table">Añadir Mesa</string>
+    <string name="table_management_edit_table">Editar Mesa</string>
+    <string name="table_management_table_name">Nombre de la Mesa</string>
+    <string name="table_management_table_state">Estado de la Mesa</string>
+    <string name="table_management_customers">Número de Clientes</string>
+    <string name="table_management_validation_error">Por favor, rellena todos los campos requeridos</string>
+    <string name="table_management_save_error">Error guardando mesa</string>
+    <string name="table_management_save">Guardar</string>
+    <string name="table_management_cancel">Cancelar</string>
+    <string name="table_management_empty">No hay mesas disponibles</string>
+    <string name="table_management_deleted_success">Mesa eliminada correctamente</string>
+    <string name="table_management_delete_error">Error eliminando mesa</string>
+    <string name="table_management_tab">Mesas</string>
+    <string name="table_management_add_error">Error añadiendo mesa</string>
+    <string name="table_management_update_error">Error actualizando mesa</string>
+    <string name="table_management_title">Gestión de Mesas</string>
+
+    <!-- Admin Orders -->
+    <string name="admin_orders_tab_pending">Pendientes</string>
+    <string name="admin_orders_tab_in_progress">En Progreso</string>
+    <string name="admin_orders_tab_ready">Listos</string>
+    <string name="admin_orders_tab_history">Historial</string>
+    <string name="admin_orders_accept_description">Aceptar pedido</string>
+    <string name="admin_orders_accept">Aceptar</string>
+    <string name="admin_orders_quantity_format">Cant: %1$d</string>
+    <string name="admin_orders_observation_prefix">Nota: %1$s</string>
+    <string name="admin_orders_mark_as_ready">Marcar como Listo</string>
+    <string name="admin_orders_empty_pending">No hay pedidos pendientes</string>
+    <string name="admin_orders_stage">Etapa: %1$s</string>
+    <string name="admin_orders_stage_unspecified">No especificada</string>
+    <string name="admin_orders_obs_prefix">Nota: %1$s</string>
+    <string name="admin_orders_accept_button">Aceptar</string>
+    <string name="admin_orders_empty_in_progress">No hay pedidos en progreso</string>
+    <string name="admin_orders_empty_ready">No hay pedidos listos</string>
+    <string name="admin_orders_notification_sent">Notificación enviada al camarero</string>
+    <string name="admin_orders_table_name">Mesa %1$s</string>
+    <string name="admin_orders_info_icon_description">Información del pedido</string>
+    <string name="admin_orders_deliver_button">Entregar</string>
+    <string name="admin_orders_accepted_success">Pedido aceptado correctamente</string>
+    <string name="admin_orders_accept_error">Error aceptando pedido</string>
+    <string name="admin_orders_not_found">Pedido no encontrado</string>
+    <string name="admin_orders_rejected_success">Pedido rechazado correctamente</string>
+    <string name="admin_orders_total">Total: %1$d elementos</string>
+    <string name="admin_orders_reject_error">Error rechazando pedido</string>
+    <string name="admin_orders_marked_success">Pedido marcado como listo</string>
+    <string name="admin_orders_completed_success">Pedido completado correctamente</string>
+    <string name="admin_orders_complete_error">Error completando pedido</string>
+    <string name="admin_orders_stage_sent">Notificación de etapa enviada</string>
+    <string name="admin_orders_stage_update_error">Error actualizando etapa</string>
+    <string name="admin_orders_status_update_error">Error actualizando estado</string>
+    <string name="admin_orders_not_found_for_stage">Pedido no encontrado para actualización de etapa</string>
+
+    <!-- Admin History -->
+    <string name="admin_history_empty">No hay historial de pedidos disponible</string>
+    <string name="admin_history_stage_other">Otro</string>
+    <string name="admin_history_table_name">Mesa %1$s</string>
+    <string name="admin_history_complete_order">Pedido Completo</string>
+    <string name="admin_history_quantity_format">Cant: %1$d</string>
+    <string name="admin_history_stage_primers">Entrantes</string>
+    <string name="admin_history_stage_segons">Platos Principales</string>
+    <string name="admin_history_stage_postres">Postres</string>
+
+    <!-- Reservations -->
+    <string name="reservation_error_saving">Error guardando reserva</string>
+    <string name="reservation_error_deleting">Error eliminando reserva</string>
+    <string name="admin_reservations_add">Añadir Reserva</string>
+    <string name="admin_reservations_empty">No hay reservas</string>
+    <string name="reservation_label_date">Fecha:</string>
+    <string name="reservation_label_time">Hora:</string>
+    <string name="reservation_label_people">Personas:</string>
+    <string name="reservation_label_table">Mesa:</string>
+    <string name="reservation_table_id">Mesa %1$d</string>
+    <string name="reservation_label_phone">Teléfono:</string>
+    <string name="admin_reservations_edit">Editar</string>
+    <string name="admin_reservations_delete">Eliminar</string>
+    <string name="admin_reservations_new">Nueva Reserva</string>
+    <string name="admin_reservations_edit_title">Editar Reserva</string>
+    <string name="admin_reservations_close">Cerrar</string>
+    <string name="reservation_client_name">Nombre del Cliente</string>
+    <string name="reservation_date">Fecha</string>
+    <string name="reservation_time">Hora</string>
+    <string name="reservation_people">Número de Personas</string>
+    <string name="reservation_phone">Teléfono</string>
+    <string name="reservation_select_table">Seleccionar Mesa</string>
+    <string name="reservation_table">Mesa</string>
+    <string name="reservation_loading_tables">Cargando mesas...</string>
+    <string name="reservation_no_tables">No hay mesas disponibles</string>
+    <string name="reservation_table_status">%1$s - %2$s</string>
+    <string name="reservation_status">Estado de la Reserva</string>
+    <string name="reservation_cancel">Cancelar</string>
+    <string name="reservation_save">Guardar</string>
+    <string name="reservation_error_loading_tables">Error cargando mesas</string>
+
+    <!-- Users Management -->
+    <string name="users_add">Añadir Usuario</string>
+    <string name="users_empty">No se encontraron usuarios</string>
+    <string name="user_deleted_success">Usuario eliminado correctamente</string>
+    <string name="user_delete_error">Error eliminando usuario</string>
+    <string name="validation_email_required">El email es requerido</string>
+    <string name="validation_password_required">La contraseña es requerida</string>
+    <string name="validation_password_length">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="validation_fullname_required">El nombre completo es requerido</string>
+    <string name="user_created_success">Usuario creado correctamente</string>
+    <string name="user_updated_success">Usuario actualizado correctamente</string>
+    <string name="user_update_error">Error actualizando usuario</string>
+    <string name="user_config_updated">Configuración de usuario actualizada</string>
+    <string name="user_config_update_error">Error actualizando configuración de usuario</string>
+    <string name="users_edit">Editar</string>
+    <string name="add_user_title">Añadir Nuevo Usuario</string>
+    <string name="add_user_email">Email</string>
+    <string name="add_user_password">Contraseña</string>
+    <string name="add_user_fullname">Nombre Completo</string>
+    <string name="add_user_button">Añadir Usuario</string>
+    <string name="add_user_cancel">Cancelar</string>
+    <string name="user_edit_title">Editar Usuario</string>
+    <string name="user_config_title">Configuración de Usuario</string>
+    <string name="user_config_current_config">Configuración Actual</string>
+    <string name="user_config_dark_theme">Tema Oscuro</string>
+    <string name="user_config_text_size">Tamaño de Texto</string>
+    <string name="user_config_current_language">Idioma Actual</string>
+    <string name="language_display_es">Español</string>
+    <string name="language_display_ca">Catalán</string>
+    <string name="language_display_en">Inglés</string>
+    <string name="user_config_accessibility">Accesibilidad</string>
+    <string name="user_config_allow_tts">Permitir Texto a Voz</string>
+    <string name="user_config_allow_break">Permitir Solicitudes de Descanso</string>
+    <string name="user_config_allow_theme">Permitir Cambios de Tema</string>
+    <string name="user_config_allow_logout">Permitir Cerrar Sesión</string>
+    <string name="user_config_allow_language">Permitir Cambios de Idioma</string>
+    <string name="user_config_allow_textsize">Permitir Cambios de Tamaño de Texto</string>
+    <string name="user_config_allowed_themes">Temas Permitidos</string>
+    <string name="user_config_select_themes">Seleccionar temas permitidos</string>
+    <string name="user_config_save">Guardar Configuración</string>
+    <string name="user_role_label">Rol de Usuario:</string>
+
+    <!-- Stages -->
+    <string name="stage_primers_begudes">Entrantes y Bebidas</string>
+    <string name="stage_segons">Platos Principales</string>
+    <string name="stage_postres">Postres</string>
+    <string name="stage_finalizada">Finalizado</string>
+
+    <!-- Theme Names -->
+    <string name="theme_name_light">Claro</string>
+    <string name="theme_name_dark">Oscuro</string>
+    <string name="theme_name_ocean">Océano</string>
+    <string name="theme_name_sunset">Atardecer</string>
+    <string name="theme_name_nature">Naturaleza</string>
+    <string name="theme_name_purple">Morado</string>
+    <string name="theme_name_monochrome">Monocromo</string>
+    <string name="theme_name_autumn">Otoño</string>
+    <string name="theme_name_vintage">Vintage</string>
+    <string name="theme_name_fire">Fuego</string>
+    <string name="theme_name_midnight">Medianoche</string>
+    <string name="theme_name_forest">Bosque</string>
+
+    <!-- Theme Descriptions -->
+    <string name="theme_desc_light">Interfaz limpia y brillante</string>
+    <string name="theme_desc_dark">Apariencia oscura y elegante</string>
+    <string name="theme_desc_ocean">Tonos azules inspirados en el mar</string>
+    <string name="theme_desc_sunset">Colores cálidos naranjas y ámbar</string>
+    <string name="theme_desc_nature">Tonos verdes inspirados en la naturaleza</string>
+    <string name="theme_desc_purple">Tonos elegantes morados y lavanda</string>
+    <string name="theme_desc_monochrome">Diseño simple en blanco y negro</string>
+    <string name="theme_desc_autumn">Colores cálidos de otoño</string>
+    <string name="theme_desc_vintage">Diseño clásico y atemporal</string>
+    <string name="theme_desc_fire">Tonos intensos rojos y naranjas</string>
+    <string name="theme_desc_midnight">Azul oscuro profundo para uso nocturno</string>
+    <string name="theme_desc_forest">Tonos verdes profundos como un bosque</string>
+
+    <!-- Order Item -->
+    <string name="order_item_quantity_format">Cant: %1$d</string>
+
+    <!-- Error Messages -->
+    <string name="error_loading_orders_generic">Error cargando pedidos</string>
+    <string name="unknown_viewmodel_error">Clase ViewModel desconocida</string>
+
+    <!-- Theme Applied Messages -->
+    <string name="theme_applied_dark">Tema oscuro aplicado</string>
+    <string name="theme_applied_light">Tema claro aplicado</string>
+    <string name="theme_applied_ocean">Tema océano aplicado</string>
+    <string name="theme_applied_sunset">Tema atardecer aplicado</string>
+    <string name="theme_applied_nature">Tema naturaleza aplicado</string>
+    <string name="theme_applied_purple">Tema morado aplicado</string>
+    <string name="theme_applied_monochrome">Tema monocromo aplicado</string>
+    <string name="theme_applied_autumn">Tema otoño aplicado</string>
+    <string name="theme_applied_vintage">Tema vintage aplicado</string>
+    <string name="theme_applied_fire">Tema fuego aplicado</string>
+    <string name="theme_applied_midnight">Tema medianoche aplicado</string>
+    <string name="theme_applied_forest">Tema bosque aplicado</string>
+
+    <!-- Language Switch Descriptions -->
+    <string name="switch_language_icon_description">Cambiar idioma</string>
+
+    <!-- Admin Config -->
+    <string name="admin_config_role_label">ADMINISTRADOR</string>
+    <string name="admin_config_logout_description">Cerrar sesión del sistema</string>
+    <string name="admin_config_logout">CERRAR SESIÓN</string>
+
+    <!-- Language Codes and Countries -->
+    <string name="language_code_spanish">ES</string>
+    <string name="language_country_spanish">España</string>
+    <string name="language_code_catalan">CA</string>
+    <string name="language_country_catalan">Cataluña</string>
+    <string name="language_code_english">EN</string>
+    <string name="language_country_english">Reino Unido</string>
+
+    <!-- Theme Names (simple references without prefix) -->
+    <string name="theme_light">Claro</string>
+    <string name="theme_dark">Oscuro</string>
+    <string name="theme_ocean">Océano</string>
+    <string name="theme_sunset">Atardecer</string>
+    <string name="theme_nature">Naturaleza</string>
+    <string name="theme_purple">Morado</string>
+    <string name="theme_monochrome">Monocromo</string>
+    <string name="theme_autumn">Otoño</string>
+    <string name="theme_vintage">Vintage</string>
+    <string name="theme_fire">Fuego</string>
+    <string name="theme_midnight">Medianoche</string>
+    <string name="theme_forest">Bosque</string>
+
+    <!-- Waiter Config Screen -->
+    <string name="loading_user_permissions">Cargando permisos de usuario...</string>
+    <string name="no_config_permissions">No tienes permiso para acceder a las opciones de configuración</string>
+
+    <!-- Additional Break Request -->
+    <string name="break_request_from">De: %1$s</string>
+    <string name="break_request_content_empty">Sin motivo especificado</string>
+    <string name="break_request_default">Solicitud de descanso</string>
+    <string name="user_unknown">Usuario desconocido</string>
+
+    <!-- Break Messages -->
+    <string name="break_messages_title">MENSAJES DE DESCANSO</string>
+    <string name="break_request_empty">No hay solicitudes de descanso disponibles</string>
+    <string name="break_request_mark_read">Marcar todo como leído</string>
+    <string name="break_request_mark_read_success">Todos los mensajes marcados como leídos</string>
+    <string name="break_request_mark_read_error">Error marcando mensajes como leídos</string>
+    <string name="break_notification_received">Nueva solicitud de descanso recibida</string>
+    <string name="break_request_status_approved">APROBADO</string>
+    <string name="break_request_status_rejected">RECHAZADO</string>
+    <string name="break_request_status_pending">PENDIENTE</string>
+    <string name="break_request_notification_channel_name">Solicitudes de Descanso</string>
+    <string name="break_request_notification_channel_description">Notificaciones para solicitudes de descanso del personal</string>
+    <string name="break_request_update_error">Error actualizando solicitud de descanso</string>
+    <string name="break_request_accept">ACEPTAR</string>
+    <string name="break_request_reject">RECHAZAR</string>
+    <string name="break_request_title">Solicitud de Descanso</string>
+
+    <!-- Break Request Notifications -->
+    <string name="break_requests_channel_name">Solicitudes de Descanso</string>
+    <string name="break_requests_channel_description">Notificaciones de nuevas solicitudes de descanso</string>
+    <string name="break_notification_title">Nueva solicitud de descanso</string>
+    <string name="break_notification_from">Solicitud de %1$s</string>
+    <string name="break_notification_description">Notificación de solicitud de descanso</string>
+
+    <!-- Table States -->
+    <string name="table_state_occupied">OCUPADA</string>
+    <string name="table_state_reserved">RESERVADA</string>
+    <string name="table_state_free">LIBRE</string>
+
+    <!-- TTS Messages -->
+    <string name="tts_activated">Texto a voz activado</string>
+    <string name="tts_language_changed">Idioma cambiado a %1$s</string>
+    <string name="tts_voice_not_available">Voz no disponible para este idioma</string>
+    
+    <!-- Navigation TTS -->
+    <string name="tts_go_to_tables">Ir a mesas</string>
+    <string name="tts_go_to_orders">Ir a pedidos</string>
+    <string name="tts_go_to_config">Ir a configuración</string>
+    
+    <!-- Table TTS -->
+    <string name="tts_table_occupied">Mesa %1$s ocupada con %2$d clientes</string>
+    <string name="tts_table_reserved">Mesa %1$s reservada</string>
+    <string name="tts_table_free">Mesa %1$s libre</string>
+    
+    <!-- Order TTS -->
+    <string name="tts_quantity_increased">%1$s: cantidad aumentada a %2$d</string>
+    <string name="tts_quantity_decreased">%1$s: cantidad disminuida a %2$d</string>
+    <string name="tts_dish_selected">Plato seleccionado: %1$s</string>
+
+    <!-- TTS Additional Strings -->
+    <string name="tts_button_clicked">Botón presionado</string>
+    <string name="tts_table_selected">Mesa %1$s seleccionada</string>
+    <string name="tts_table_state">Mesa %1$s está %2$s</string>
+    <string name="tts_item_added">Elemento añadido</string>
+    <string name="tts_item_removed">Elemento eliminado</string>
+    <string name="tts_category_selected">Categoría seleccionada: %1$s</string>
+    <string name="tts_stage_selected">Etapa seleccionada: %1$s</string>
+    <string name="tts_notification_received">Notificación recibida para mesa %1$s: %2$s</string>
+    <string name="tts_notification_order_ready">Pedido listo para mesa %1$s: %2$s</string>
+    <string name="tts_category_ready">Categoría %1$s está lista</string>
+    <string name="tts_table_state_free">libre</string>
+    <string name="tts_table_state_occupied">ocupada</string>
+    <string name="tts_table_state_reserved">reservada</string>
+    <string name="tts_clients_increased">Clientes aumentados a %1$d para mesa %2$s</string>
+    <string name="tts_clients_decreased">Clientes disminuidos a %1$d para mesa %2$s</string>
+    <string name="tts_no_clients">Sin clientes en mesa %1$s</string>
+    <string name="tts_item_quantity_increased">%1$s: cantidad aumentada a %2$d</string>
+    <string name="tts_item_quantity_decreased">%1$s: cantidad disminuida a %2$d</string>
+    <string name="tts_item_removed_from_order">%1$s eliminado del pedido</string>
+    <string name="speak">Hablar</string>
+
+    <!-- Voice Quality Indicators -->
+    <string name="voice_quality_excellent">Excelente</string>
+    <string name="voice_quality_good">Buena</string>
+    <string name="voice_quality_fair">Regular</string>
+    <string name="voice_quality_poor">Mala</string>
+
+    <!-- TTS Test Messages -->
+    <string name="config_test_tts_message">Esta es una prueba del sistema de texto a voz</string>
+    <string name="config_voice_section_title">Configuración de Voz</string>
+    <string name="config_voice_enable">Habilitar Texto a Voz</string>
+    <string name="config_voice_engine_missing">Motor TTS Ausente</string>
+    <string name="config_voice_install">Instalar Motor de Voz</string>
+    <string name="config_test_tts">Probar TTS</string>
+    <string name="config_test_tts_quantities">Probar TTS Cantidades</string>
+    <string name="config_test_tts_cooking">Probar TTS Puntos de Cocción</string>
+    <string name="config_test_tts_notifications">Probar TTS Notificaciones</string>
+
+    <string name="config_no_permissions_available">No hay opciones disponibles</string>
+    <string name="config_contact_admin_for_access">Contacta al administrador para acceso</string>
+    <string name="config_tts_title">Texto a Voz</string>
+    <string name="config_tts_description">Habilitar texto a voz para navegación</string>
+    <string name="config_text_size_section">Tamaño de Texto</string>
+
+    <!-- TTS Notification Messages -->
+    <string name="tts_new_notification">Nueva notificación</string>
+    <string name="tts_table_number">mesa %1$s</string>
+    <string name="tts_ready_to_serve">listo para servir</string>
+    <string name="tts_notification_full">Nueva notificación: mesa %1$s, %2$s listo para servir</string>
+
+    <!-- TTS Stage Names -->
+    <string name="tts_stage_primers_begudes">entrantes y bebidas</string>
+    <string name="tts_stage_primers">entrantes</string>
+    <string name="tts_stage_begudes">bebidas</string>
+    <string name="tts_stage_segons">platos principales</string>
+    <string name="tts_stage_postres">postres</string>
+    <string name="tts_stage_unknown">categoría desconocida</string>
+
+    <!-- TTS Button Actions -->
+    <string name="tts_button_served">Servido</string>
+    <string name="tts_button_dismiss">Descartar</string>
+    <string name="tts_button_new_order">Nuevo pedido</string>
+    <string name="tts_button_continue_order">Continuar pedido</string>
+    <string name="tts_button_send_order">Enviar pedido</string>
+    <string name="tts_button_update_table">Actualizar mesa</string>
+
+    <!-- User Configuration - Language Permissions -->
+    <string name="user_config_allowed_languages">Idiomas Permitidos</string>
+    <string name="user_config_select_languages">Seleccionar idiomas permitidos</string>
+    <string name="language_permission_spanish">Español</string>
+    <string name="language_permission_catalan">Catalán</string>
+    <string name="language_permission_english">Inglés</string>
+
+    <!-- User Configuration Additional Strings -->
+    <string name="user_config_tts_enabled">Texto a Voz Habilitado</string>
+    <string name="user_config_accessibility_enabled">Accesibilidad Habilitada</string>
+    <string name="user_config_allow_break_request">Permitir Solicitudes de Descanso</string>
+    <string name="user_config_allow_theme_change">Permitir Cambio de Tema</string>
+    <string name="user_config_allow_language_change">Permitir Cambio de Idioma</string>
+
+    <!-- Añadir a strings-es.xml -->
+    <string name="category_primers_only">ENTRANTES</string>
+    <string name="category_begudes_only">BEBIDAS</string>
+    <string name="category_primers_begudes_combined">ENTRANTES Y BEBIDAS</string>
+
+    <!-- User Creation Restrictions -->
+    <string name="user_creation_waiter_only">Solo puedes crear usuarios camareros</string>
+    <string name="user_creation_no_admin_permission">No tienes permisos para crear administradores</string>
+    <string name="user_edit_no_admin_permission">No puedes modificar otros administradores</string>
+    <string name="validation_role_required">Selecciona un rol válido</string> <!-- español -->
+
+    <!-- Accesibilidad y textos de UI (mejoras-ui) -->
+    <string name="login_error_credentials">Email o contraseña incorrectos</string>
+    <string name="login_error_role">Este usuario no tiene el rol seleccionado</string>
+    <string name="login_error_inactive">Usuario no encontrado o desactivado</string>
+    <string name="login_error_generic">No se pudo iniciar sesión. Inténtalo de nuevo.</string>
+    <string name="order_ready_title">¡Pedido listo!</string>
+    <string name="notif_table_label">Mesa: %1$s</string>
+    <string name="notif_dishes_ready_title">¡%1$s LISTOS!</string>
+    <string name="notif_dishes_ready_message">Los platos están listos para servir</string>
+    <string name="notif_dishes_icon_description">Notificación de platos</string>
+    <string name="notif_category_ready_description">Categoría lista</string>
+    <string name="tables_tap_hint">Toca una mesa para ver su información</string>
+    <string name="text_size_sample">Texto de muestra</string>
+    <string name="text_size_decrease">Disminuir tamaño de texto</string>
+    <string name="text_size_increase">Aumentar tamaño de texto</string>
+    <string name="menu_item_delete_description">Eliminar plato</string>
+    <string name="image_preview">Vista previa de la imagen</string>
+    <string name="image_select">Seleccionar imagen</string>
+    <string name="user_email_value">Email: %1$s</string>
+    <string name="user_id_value">ID: %1$s</string>
+    <string name="order_item_observations_hint">Sin sal, etc…</string>
+    <string name="close_image">Cerrar imagen</string>
+    <string name="switch_state_on">activado</string>
+    <string name="switch_state_off">desactivado</string>
+
+</resources>
